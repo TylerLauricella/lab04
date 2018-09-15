@@ -42,7 +42,9 @@ public class ColorBlobs extends JPanel
 		int val1 = rand.nextInt(256);
 		int val2 = rand.nextInt(256);
 		int val3 = rand.nextInt(256);	
-
+		
+		int val4 = rand.nextInt(width)-0;
+		int val5 = rand.nextInt(height)-0;
 		
 		Color rndmColor = new Color(val1,val2,val3);
 		
@@ -51,8 +53,8 @@ public class ColorBlobs extends JPanel
 		// Use this instance instead of creating a new one.
 
 		
-		//page.setColor(rndmColor);
-		//page.fillOval();
+		page.setColor(rndmColor);
+		page.fillOval(width-val4, height-val5,  val4/2, val5/2);
 
 
 
