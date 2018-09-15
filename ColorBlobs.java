@@ -43,8 +43,8 @@ public class ColorBlobs extends JPanel
 		int val2 = rand.nextInt(256);
 		int val3 = rand.nextInt(256);	
 		
-		int val4 = rand.nextInt(width)-0;
-		int val5 = rand.nextInt(height)-0;
+		int val4 = rand.nextInt(width)-1/20;//oval width
+		int val5 = rand.nextInt(height)-1/20;//oval height
 		
 		Color rndmColor = new Color(val1,val2,val3);
 		
@@ -56,8 +56,7 @@ public class ColorBlobs extends JPanel
 		page.setColor(rndmColor);
 		page.fillOval(width-val4, height-val5,  val4/2, val5/2);
 
-
-
+	
    		//Make the animation smoother (don't modify!)
 		Toolkit.getDefaultToolkit().sync();
 	}
