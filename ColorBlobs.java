@@ -15,7 +15,7 @@ import java.util.Random;
  * random color blobs.
  *
  * @author CS121 instructors (starter code)
- * @author Your name
+ * @author Tyler Lauricella
  */
 @SuppressWarnings("serial")
 public class ColorBlobs extends JPanel
@@ -34,14 +34,25 @@ public class ColorBlobs extends JPanel
 	 */
 	public void paintComponent(Graphics page)
 	{
+		
+		
 		int width = getWidth(); // width of the drawing panel
 		int height = getHeight(); // height of the drawing panel
+		
+		int val1 = rand.nextInt(256);
+		int val2 = rand.nextInt(256);
+		int val3 = rand.nextInt(256);	
 
+		
+		Color rndmColor = new Color(val1,val2,val3);
+		
 		// TODO: Now you fill in the rest
 		// A Random object (rand) has already been instantiated for you above.
 		// Use this instance instead of creating a new one.
 
-
+		
+		//page.setColor(rndmColor);
+		//page.fillOval();
 
 
 
